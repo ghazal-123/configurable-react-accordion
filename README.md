@@ -1,19 +1,39 @@
-# React + Vite
+# React Advanced Customizable Accordion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A highly flexible, advanced, and reusable Accordion component built with React and Vanilla CSS. This component is completely driven by Props, allowing for dynamic control over layout, styling, and behavior without relying on any heavy UI libraries.
 
-Currently, two official plugins are available:
+##  Features
+- Advanced Styling Control: Easily toggle between different design layouts (e.g., Separated or Connected).
+- Multiple Views Option: Toggle the Allow Multiple Open feature to let users open multiple items simultaneously or restrict to one at a time.
+- Icon Alignment: Flexible icon positioning support (Start or End).
+- SEO Friendly: Configurable dynamic heading tags (e.g., H1, H2, H3) for semantic HTML.
+- Pure CSS: Built entirely with standard CSS3, with absolutely zero dependency on Tailwind or other styling frameworks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Technologies Used
+- React.js
+- JavaScript (ES6+)
+- CSS3 (Vanilla CSS)
 
-## React Compiler
+##  Installation & Setup
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. Clone the repository:
+git clone https://github.com/ghazal-123
+2. Navigate to the project directory:
+cd configurable-react-accordion
+3. Install the dependencies:
+npm install
+4. Start the development server:
+npm start
+##  Props Configuration
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+The component layout and behavior can be completely customized using the following properties:
 
-## Expanding the ESLint configuration
+| Prop | Type / Options | Description |
+| :--- | :--- | :--- |
+| **styling** | Separated \| Connected | Controls the visual structure and layout of the accordion items. |
+| **iconPosition** | Start \| End | Dictates where the expand/collapse indicator icon is placed. |
+| **headingLevel** | H1, H2, H3, H4... | Defines the semantic HTML heading element used for titles. |
+| **allowMultiple** | Boolean | When true, multiple items can remain expanded at the same time. |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+ *This project showcases how to build scalable, production-ready React UI components using core state management and clean prop-drilling patterns.*
